@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghana First Forum | Faith • Unity • Service • Development</title>
+<meta name="description" content="Ghana First Forum — building ethical Christian leaders for community and national development.">
+<style>
+:root{--green:#075b34;--deep:#043d25;--gold:#f2c94c;--red:#c62828;--cream:#fffdf5;--ink:#15231c;--muted:#66736b;--line:#dfe8e2;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f7faf7}a{text-decoration:none;color:inherit}
+.top{background:var(--deep);color:#fff;text-align:center;padding:8px;font-size:12px;letter-spacing:.3px}.top b{color:var(--gold)}
+nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 3px 15px #12351d0b}.navin{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px}.brand{display:flex;align-items:center;gap:10px}.brandmark{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--gold));font-size:22px}.brand strong{display:block;font-size:15px;color:var(--green)}.brand span{font-size:10px;color:var(--muted)}.links{display:flex;gap:22px;align-items:center;font-size:13px;font-weight:700}.links a:hover{color:var(--green)}.menu{display:none;border:0;background:#eef5ef;padding:9px;border-radius:9px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;font-size:13px}.primary{background:var(--green);color:#fff}.gold{background:var(--gold);color:#1b211d}.outline{border:1px solid #bdd0c2;background:#fff;color:var(--green)}
+.hero{background:linear-gradient(115deg,#043d25 0%,#075b34 62%,#0d7644 100%);color:#fff;position:relative;overflow:hidden}.hero:after{content:"🇬🇭";position:absolute;font-size:250px;right:-20px;top:-35px;opacity:.06}.hero-in{max-width:1180px;margin:auto;padding:90px 22px 85px;position:relative;z-index:1}.eyebrow{display:inline-block;color:#1e291f;background:var(--gold);padding:6px 10px;border-radius:99px;font-size:10px;font-weight:900;letter-spacing:1px}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.96;max-width:750px;margin:18px 0 18px}.hero p{max-width:650px;font-size:17px;line-height:1.65;color:#e8f3ec}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.hero .outline{background:transparent;color:#fff;border-color:#ffffff66}
+.container{max-width:1180px;margin:auto;padding:75px 22px}.center{text-align:center}.kicker{color:var(--green);font-weight:900;font-size:11px;letter-spacing:1.5px}.title{font-size:clamp(28px,4vw,42px);margin:9px 0 12px}.lead{max-width:700px;margin:0 auto;color:var(--muted);line-height:1.65}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:35px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 10px 30px #173b2308}.card .ico{font-size:28px}.card h3{margin:12px 0 8px;font-size:17px}.card p{color:var(--muted);line-height:1.6;font-size:13px;margin:0}
+.band{background:var(--cream);border-top:1px solid #f0e8c8;border-bottom:1px solid #f0e8c8}.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.pillar{padding:16px;background:#fff;border:1px solid var(--line);border-radius:14px;font-weight:800;font-size:13px}.pillar span{display:block;color:var(--green);font-size:10px;margin-bottom:5px}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:55px;align-items:center}.quote{border-left:4px solid var(--gold);padding-left:20px;font-size:20px;line-height:1.5;font-weight:700}.founder{background:linear-gradient(145deg,#eaf4ed,#fff);border-radius:24px;padding:28px;border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.stat{text-align:center;background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px}.stat strong{display:block;font-size:29px;color:var(--green)}.stat span{font-size:11px;color:var(--muted)}
+.event{display:flex;justify-content:space-between;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:25px}.date{background:var(--green);color:#fff;border-radius:14px;padding:12px 15px;text-align:center;min-width:80px}.date strong{font-size:24px;display:block}.event h3{margin:0 0 5px}.event p{margin:0;color:var(--muted);font-size:13px}
+.register{background:var(--deep);color:#fff}.register .title{color:#fff}.register .lead{color:#cfe2d5}.form{max-width:850px;margin:30px auto 0;background:#fff;color:var(--ink);padding:25px;border-radius:20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}label{display:block;font-size:11px;font-weight:900;margin-bottom:6px}input,select,textarea{width:100%;border:1px solid #cdd9d0;border-radius:10px;padding:12px;font:inherit;font-size:13px}textarea{min-height:95px;resize:vertical}.full{grid-column:1/-1}.success{display:none;margin-bottom:15px;padding:12px;border-radius:10px;background:#e4f6ea;color:var(--green);font-size:13px;font-weight:700}
+footer{background:#022b19;color:#d6e5dc;padding:35px 22px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px}.foot h3{color:#fff;margin-top:0}.foot p{font-size:12px;line-height:1.6}.copy{border-top:1px solid #ffffff18;margin-top:25px;padding-top:18px;font-size:10px;color:#8fb09d}
+@media(max-width:800px){.links{display:none}.menu{display:block}.grid,.pillars{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero-in{padding:65px 22px}.hero h1{font-size:48px}}
+@media(max-width:520px){.grid,.pillars,.formgrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.event{align-items:flex-start;flex-direction:column}.foot{flex-direction:column}.hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<div class="top">🇬🇭 <b>GOD FIRST • GHANA FIRST • PEOPLE FIRST</b> — Faith • Unity • Service • Development</div>
+<nav><div class="navin">
+<a class="brand" href="#home"><div class="brandmark">🇬🇭</div><div><strong>Ghana First Forum</strong><span>Leadership • Service • Development</span></div></a>
+<div class="links"><a href="#about">About</a><a href="#pillars">Our Work</a><a href="#leadership">Leadership</a><a href="#events">Events</a><a href="#register" class="btn primary">Join Us</a></div>
+<button class="menu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+</div></nav>
+
+<section class="hero" id="home"><div class="hero-in">
+<span class="eyebrow">A CHRISTIAN NATION-BUILDING MOVEMENT</span>
+<h1>Building leaders who serve Ghana.</h1>
+<p>Ghana First Forum seeks to raise ethical, capable and God-fearing leaders who strengthen communities, develop people and contribute to sustainable national development.</p>
+<div class="actions"><a class="btn gold" href="#register">BECOME A MEMBER →</a><a class="btn outline" href="#leadership">Become a Chapter Leader</a></div>
+</div></section>
+
+<section class="container center">
+<span class="kicker">OUR PURPOSE</span><h2 class="title">Faith translated into action.</h2>
+<p class="lead">We mobilize, train, mentor and equip people for responsible leadership, community service, entrepreneurship, youth development and nation-building.</p>
+<div class="grid">
+<div class="card"><div class="ico">🙏</div><h3>Christian Leadership</h3><p>Develop leaders with character, spiritual maturity, humility and integrity.</p></div>
+<div class="card"><div class="ico">🤝</div><h3>Community Service</h3><p>Turn local needs into practical projects with measurable outcomes.</p></div>
+<div class="card"><div class="ico">🌱</div><h3>National Development</h3><p>Promote skills, enterprise, innovation, unity and responsible citizenship.</p></div>
+</div>
+</section>
+
+<section class="band" id="pillars"><div class="container">
+<div class="center"><span class="kicker">STRATEGIC PILLARS</span><h2 class="title">What Ghana First Forum is building</h2></div>
+<div class="pillars">
+<div class="pillar"><span>01</span>Spiritual Foundation</div><div class="pillar"><span>02</span>Membership & Institution Building</div><div class="pillar"><span>03</span>Leadership Development</div>
+<div class="pillar"><span>04</span>Youth & Women Development</div><div class="pillar"><span>05</span>Community Development</div><div class="pillar"><span>06</span>Education & Skills</div>
+<div class="pillar"><span>07</span>Entrepreneurship & Economic Empowerment</div><div class="pillar"><span>08</span>Research & Policy</div><div class="pillar"><span>09</span>Communication & National Awareness</div>
+</div>
+</div></section>
+
+<section class="container" id="about"><div class="about">
+<div><span class="kicker">VISION</span><h2 class="title">A generation prepared to lead.</h2><p class="quote">"To raise a generation of God-fearing, ethical and capable leaders who will serve communities, strengthen institutions and contribute to the sustainable transformation and development of Ghana."</p></div>
+<div class="founder"><span class="badge" style="background:#dcefe3;color:#075b34;padding:6px 9px;border-radius:99px;font-size:10px;font-weight:900">FOUNDER & VISIONARY</span><h2 style="margin-bottom:6px">Rev. Dr. Benjamin Ayikwei</h2><p style="color:var(--muted);line-height:1.65;font-size:13px">The Founder's vision is to develop a credible, accountable and service-oriented movement where Christian values become a foundation for leadership and practical national development.</p><div class="stats"><div class="stat"><strong>500</strong><span>Year-One members</span></div><div class="stat"><strong>5</strong><span>Regional pilots</span></div><div class="stat"><strong>100</strong><span>Emerging leaders</span></div><div class="stat"><strong>3</strong><span>Community projects</span></div></div></div>
+</div></section>
+
+<section class="container" id="leadership"><div class="center"><span class="kicker">LEADERSHIP</span><h2 class="title">Step forward. Serve your community.</h2><p class="lead">We are building a leadership pipeline from community chapters to national programmes.</p></div>
+<div class="grid">
+<div class="card"><div class="ico">🏘️</div><h3>Chapter Leaders</h3><p>Mobilize members, organize meetings, coordinate volunteers and lead community service.</p></div>
+<div class="card"><div class="ico">🎓</div><h3>Future Leaders</h3><p>Receive training in Christian leadership, governance, communication and project management.</p></div>
+<div class="card"><div class="ico">🚀</div><h3>Young Leaders</h3><p>Build skills, enterprise, mentorship networks and opportunities for national service.</p></div>
+</div>
+<div class="center" style="margin-top:25px"><a class="btn primary" href="#register">APPLY / REGISTER</a></div>
+</section>
+
+<section class="container" id="events"><div class="center"><span class="kicker">UPCOMING</span><h2 class="title">Events & opportunities</h2></div>
+<div class="event"><div class="date"><strong>26</strong>AUG 2026</div><div style="flex:1"><h3>Ghana First Forum Chapter Leaders Meeting</h3><p>10:00 AM • Leadership recruitment, orientation and chapter development.</p></div><a class="btn outline" href="#register">Register</a></div>
+</section>
+
+<section class="register" id="register"><div class="container"><div class="center"><span class="kicker" style="color:var(--gold)">ONLINE REGISTRATION</span><h2 class="title">Join Ghana First Forum</h2><p class="lead">Register your interest as a member, volunteer, leader, mentor or entrepreneur.</p></div>
+<div class="form"><div id="success" class="success"></div><form id="form"><div class="formgrid">
+<div><label>FIRST NAME *</label><input id="first" required></div><div><label>LAST NAME *</label><input id="last" required></div>
+<div><label>PHONE *</label><input id="phone" type="tel" required placeholder="024 000 0000"></div><div><label>EMAIL</label><input id="email" type="email" placeholder="you@example.com"></div>
+<div><label>REGION *</label><select id="region" required><option value="">Select region</option><option>Greater Accra</option><option>Ashanti</option><option>Central</option><option>Eastern</option><option>Western</option><option>Western North</option><option>Volta</option><option>Oti</option><option>Ahafo</option><option>Bono</option><option>Bono East</option><option>Northern</option><option>Savannah</option><option>North East</option><option>Upper East</option><option>Upper West</option></select></div>
+<div><label>DISTRICT / TOWN</label><input id="district"></div>
+<div class="full"><label>AREA OF INTEREST *</label><select id="interest" required><option value="">Select</option><option>General Membership</option><option>Chapter Leader</option><option>Youth Leader</option><option>Women's Leadership</option><option>Volunteer</option><option>Professional / Mentor</option><option>Entrepreneur</option></select></div>
+<div class="full"><label>CHURCH / ORGANIZATION</label><input id="church"></div>
+<div class="full"><label>LEADERSHIP / COMMUNITY EXPERIENCE</label><textarea id="experience" placeholder="Briefly tell us about your experience."></textarea></div>
+<div class="full"><label><input id="agree" type="checkbox" required style="width:auto;margin-right:7px"> I agree to be contacted about Ghana First Forum activities.</label></div>
+<div class="full"><button class="btn primary" type="submit">SUBMIT REGISTRATION</button></div>
+</div></form></div></div></section>
+
+<footer><div class="foot"><div><h3>🇬🇭 Ghana First Forum</h3><p>God First • Ghana First • People First<br>Faith • Unity • Service • Development</p></div><div><h3>Contact</h3><p>Phone: 024 519 3744<br>Founder & Visionary: Rev. Dr. Benjamin Ayikwei</p></div></div><div class="copy">© 2026 Ghana First Forum. Founder's Edition. All rights reserved.</div></footer>
+<script>
+document.getElementById('form').addEventListener('submit',function(e){
+e.preventDefault();
+const data={first:first.value,last:last.value,phone:phone.value,email:email.value,region:region.value,district:district.value,interest:interest.value,church:church.value,experience:experience.value,date:new Date().toISOString()};
+localStorage.setItem('ghanaFirstWebsiteRegistration',JSON.stringify(data));
+document.getElementById('success').style.display='block';
+document.getElementById('success').textContent='Registration received, '+data.first+'! This prototype has saved your information on this device. A production website can send it securely to the Ghana First membership database.';
+this.reset();window.scrollTo({top:document.getElementById('register').offsetTop-70,behavior:'smooth'});
+});
+</script>
+</body>
+</html>
